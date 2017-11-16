@@ -3,7 +3,11 @@ College Tech Challenge Final Round
 
 <b>Project name:</b> Aging Connecticut
 
-<b>Description: </b>
+<b>Description: </b><br>
+The main purpose of this web application is to develop a valuable resource for senior citizens that provides relevant information for their daily activities.
+This web application was developed with the purpose to make information easily accessible to senior citizens.
+As a secondary purpose, this web application was created to develop our own technological skills as web developers. 
+
 
 <b>Table of Contents: </b><br>
 Master Page/Home Page, MeetUps Page, Programs Page, Day Trips Page and Fitness Page.
