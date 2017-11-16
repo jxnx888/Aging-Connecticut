@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AgingConnecticut.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Aging Connecticut</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Josefin+Sans|Patua+One" rel="stylesheet"> 
+     <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>//Back to Top Function
+          $(document).ready(function () {
+              // Show or hide the sticky footer button
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 400) {
+                      $('.go-top').fadeIn(400);
+                  } else {
+                      $('.go-top').fadeOut(400);
+                  }
+              });
+              // Animate the scroll to top
+              $('.go-top').click(function (event) {
+                  event.preventDefault();
+                  $('html, body').animate({
+                      scrollTop: 0
+                  },400);
+              })
+          });
+      </script>
+   
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <!-- Header starts here -->
+        <div class="header">
+            <div class="col-md-12">
+                <div class="col-md-4 col-sm-4 text-center">
+                   <!-- <h2>Logo goes here </h2> -->
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <img src="Images/agingLogo.png" />
+                </div>
+                <div class="col-md-4 col-sm-4 socialicons">                            
+                    <div class="social facebook">
+                        <i class="fa fa-facebook fa-3x"></i>       
+                    </div>
+                    <div class="social twitter">
+                        <i class="fa fa-twitter fa-3x"></i>   
+                    </div>
+                    <div class="social instagram">
+                        <i class="fa fa-instagram fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header ends here -->
+
+        <!-- Navigation Bar starts here -->
+        <div class="navbar navbar-inverse ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/Default"><img class="navLogo" src="Images/agingLogo.png"/></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/MeetUps">Meetups</a></li>
+                        <li><a runat="server" href="~/Programs">Programs</a></li>
+                        <li><a runat="server" href="~/DayTrips">Day Trips</a></li>
+                        <li><a runat="server" href="~/Fitness">Fitness</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Bar ends here -->
+
+        <!-- Main content starts here -->
+        <div class="body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            
+            </asp:ContentPlaceHolder>
+            <hr />
+        </div>
+
+        <!-- Main content ends here -->
+
+        <!-- Footer starts here -->
+        <div class="footer">
+            <div class="topFooter col-md-12">
+                <div class="col-md-4 col-sm-4">
+                    <h2>Contact Information</h2>
+                    <hr>
+                    <div class="col-md-12  col-sm-12">
+                        <p><a><i class="fa fa-map-marker fa-2x fa-fw" ></i>&nbsp; 1234 New Day Drive</a></p>
+                        <p><a><i class="fa fa-fw" style="padding-left:60px;"></i>Fairfield, CT 06825</a></p>
+                        <p><a><i class="fa fa-phone fa-2x fa-fw" ></i>&nbsp; (203)555-1234</a></p>
+                        <p><a><i class="fa fa-envelope fa-2x fa-fw"></i>&nbsp; info@AgingConnecticut.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4  col-sm-4 text-center">
+                    <div class="col-sm-12">
+                    <h2>Leave Us a Message</h2>
+                    </div>
+                     <div class="col-sm-12">
+    				    <div class="form-group">
+						    <input type="text" class="form-control" id="contactName" name="contactName" placeholder="Name">
+					    </div>
+
+                     </div>
+                     <div class="col-sm-12">
+					    <div class="form-group">
+						    <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+					    </div>
+                        </div>
+                     <div class="col-sm-12">
+                    <div class="form-group">
+                            <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="3"></textarea>             
+                        </div>
+            </div>
+                                         <div class="col-sm-12">
+
+                        <button type="button" id="submit" name="submit" class="btn btn-md pull-right">Submit</button>
+                                             </div>
+                </div>
+                <div class="col-md-4  col-sm-4 text-center">
+                    <!--<h2>Magnifying Glass</h2>
+                    <h4>Use this tool the see and read better.</h4>--><!-- Function could not be implemented-->
+                </div>
+            </div>
+            <div class="bottomFooter col-md-12  col-sm-12">
+                <p>&copy; <%: DateTime.Now.Year %> - Aging Connecticut</p>
+            </div>
+             <div id="divFootArrow"><%--Back to Top--%>
+               <a href="#" class="go-top" style="display: inline;"><img src="Images/BackToTop.png" /></a>
+            </div>
+        </div>
+        <!-- Footer ends here -->
+    </form>
+</body>
+</html>

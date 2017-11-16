@@ -1,0 +1,735 @@
+﻿/***  MASTER PAGE  ***/
+/** Header **/
+.header {
+    height: 350px;
+    /**   padding-top: 30px;
+    padding-bottom: 20px;**/
+    background-color: #ffffff;
+    background-image: url('../Images/masterBanner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .header img {
+        width: 400px;
+        height: 300px;
+        padding-top: 50px;
+    }
+
+/* For social media */
+.socialicons {
+    position: center;
+    padding-top: 80px;
+    padding-left: 100px;
+}
+
+.social {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    float: left;
+    background: rgb(255,255,255);
+    border: 1px solid rgb(204,204,204);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 100px;
+    margin: 30px 20px 20px 0;
+    padding: 15px;
+}
+
+.facebook:hover {
+    background: #3b5998;
+    color: #FFF;
+}
+
+.twitter:hover {
+    background: #00acee;
+    color: #FFF;
+}
+
+.instagram:hover {
+    background: #517fa4;
+    color: #FFF;
+}
+
+/** Navigation**/
+.navbar {
+    background: #FF531A;
+    border-color: #FF531A;
+    border-radius: 0px;
+    height: 60px;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navLogo {
+    width: 120px;
+    height: 55px;
+}
+/* Override navigation bar*/
+.nav a {
+    font-size: 26px;
+}
+
+.nav li {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 0px;
+    font-family: 'Patua One', cursive;
+    font-size: 18px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #999999;
+    }
+/**  Footer  **/
+.go-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.footer p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.topFooter {
+    height: 300px;
+    background-color: #6B6B6B;
+    color: #6B6B6B;
+    padding-top: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+    .topFooter h2, h4, p {
+        color: #EAEAEA;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .topFooter a {
+        color: #EAEAEA;
+    }
+
+        .topFooter a:hover {
+            text-decoration: none;
+            color: #EAEAEA;
+        }
+
+.topFooterLogo {
+    width: 150px;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.bottomFooter {
+    height: 40px;
+    background-color: #494949;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*** DEFAULT PAGE***/
+.container h1 {
+    font-size: 4em;
+    color: #303644;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 600;
+    font-variant-caps: normal;
+}
+
+.container h3 {
+    font-size: 3em;
+    color: #303644;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-variant-caps: normal;
+}
+
+.container h4 {
+    font-size: 2em;
+    color: #303644;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-variant-caps: normal;
+}
+
+.container p {
+    font-size: 1.5em;
+    color: #AFAFAF;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+    text-align: justify;
+}
+
+.btn-primary {
+    background-color: #303644;
+    border-color: #303644;
+}
+
+.aboutThumbnail {
+    margin-top: 20px;
+}
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 650px;
+}
+
+    .fade-carousel .carousel-inner .item {
+        height: 650px;
+    }
+
+    .fade-carousel .carousel-indicators > li {
+        margin: 0 2px;
+        background-color: #FFFFFF;
+        border-color: #FF531A;
+        opacity: .7;
+    }
+
+        .fade-carousel .carousel-indicators > li.active {
+            width: 10px;
+            height: 10px;
+            opacity: 1;
+        }
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #FFFFFF;
+    border-color: #FF531A;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+
+    .hero h1 {
+        font-size: 5.5em;
+        font-weight: bold;
+        font-family: 'Archivo Black', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: 0;
+}
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4 {
+    height: 650px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .slide-1 {
+    background-image: url('../Images/mainCarousel1.jpg');
+}
+
+.fade-carousel .slides .slide-2 {
+    background-image: url('../Images/mainCarousel2.jpg');
+}
+
+.fade-carousel .slides .slide-3 {
+    background-image: url('../Images/mainCarousel3.jpg');
+}
+
+.fade-carousel .slides .slide-4 {
+    background-image: url('../Images/mainCarousel4.jpg');
+}
+
+.sponsorLogo {
+    width: 130px;
+    height: 90px;
+    text-align: center;
+}
+
+/*** DAY TRIPS PAGE***/
+.box {
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 2px 10px -4px #333745;
+    -moz-box-shadow: 0px 2px 10px -4px #333745;
+    -ms-box-shadow: 0px 2px 10px -4px #333745;
+    -o-box-shadow: 0px 2px 10px -4px #333745;
+    box-shadow: 0px 2px 10px -4px #333745;
+}
+
+.imgCard {
+    width: 300px;
+    height: 200px;
+}
+
+.inspire {
+}
+
+.parallax-container {
+    width: 100%;
+    text-align: center;
+}
+
+.parallax-section {
+    background-image: url('../Images/seniorsLove.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 120px 0 105px 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+    .parallax-content h2 {
+        font-size: 4.5em;
+        font-weight: bold;
+        font-family: 'Archivo Black', sans-serif;
+        margin: 65px 0 80px 0;
+        color: #FFFFFF;
+    }
+
+/*** MeetUps PAGE***/
+.small.normal_view iframe {
+    padding-left: 13px;
+}
+.iPad_view {
+    display: none;
+}
+
+.iPhone_view {
+    display: none;
+}
+/*** Program PAGE***/
+
+
+
+.program {
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+.calendar_view iframe {
+    width: 1100px;
+    height: 600px;
+}
+ 
+@media screen and (max-width: 480px) {
+    #wrap {
+        top: 10%;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+
+        #wrap .card {
+            width: 100%;
+        }
+}
+/*** Health PAGE***/
+.description {
+    height: 200px;
+    overflow-y: scroll;
+    border: solid 1px #000;
+}
+
+.thumbnail {
+    padding: 0;
+    margin-top: 25px;
+    float: left;
+}
+
+    .thumbnail p {
+        text-align: -webkit-left;
+        margin: 0px 5px;
+        color: #000;
+    }
+
+    .thumbnail img {
+        width: 100%;
+    }
+
+    .thumbnail li {
+        text-align: -webkit-left;
+    }
+
+section.page-section.prose h1, .HF h1 {
+    color: #000;
+    font-size: 3rem;
+}
+
+.HF p {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.HF li a {
+    color: #ff6a00;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.HFname {
+    margin-top: 25%;
+}
+.HF ul {
+    list-style-type: none;
+}
+.HF ul li a {
+    text-decoration: none;
+   
+}
+/* popup window*/
+p.modal-title {
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.reference {
+    color: #428bca;
+    text-align: center;
+}
+
+.modal-dialog {
+    width: 700px;
+}
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px) {
+    .hero {
+        width: 980px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero h1 {
+        font-size: 4em;
+    }
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 768px) {
+
+    .body-content {
+        padding: 0;
+    }
+    /*Home*/
+    .header {
+        height: 180px;
+    }
+
+        .header img {
+            width: 250px;
+            height: 165px;
+            padding-top: 0;
+        }
+
+    .socialicons {
+        position: inherit;
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .sponsorLogo {
+        width: 125px;
+        height: 74px;
+        text-align: center;
+        padding: 7px 10px;
+    }
+
+    .social {
+        margin: 56px 5px 0px 0px;
+    }
+
+    .nav li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .topFooter h2 {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .topFooter a {
+        margin-left: -29px;
+    }
+    /*** MeetUps PAGE***/
+    .iPhone_view {
+        display: none;
+    }
+
+    .iPad_view {
+        display: inline;
+    }
+
+    .normal_view {
+        display: none;
+    }
+    /*Program*/
+    #wrap .card {
+        margin-bottom: 23%;
+        height: 465px;
+    }
+
+        #wrap .card h3 {
+            text-align: center;
+            margin-top: 63px;
+        }
+
+    .option {
+        margin-top: 35px;
+    }
+
+    .calendar_view iframe {
+        width: 540px;
+        height: 350px;
+    }
+    /*Day Trip*/
+    .box {
+        margin: 0 10%;
+    }
+
+    /*Fitness*/
+    .modal-dialog {
+        width: 500px;
+    }
+    center.img img {
+        width: 70%;
+    }
+    .HF ol {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    /*Home Page*/
+    .navbar-collapse.collapse.in {
+        background-color: #FF531A;
+    }
+
+    .header {
+        height: 95px;
+    }
+
+        .header img {
+            width: 126px;
+            height: 80px;
+            padding-top: 0;
+        }
+
+    .socialicons {
+        position: absolute;
+        z-index: 99999999;
+        margin-top: -10%;
+        margin-left: 30%;
+    }
+
+    .social {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .sponsorLogo {
+        width: 220px;
+        height: auto;
+    }
+
+    img.sponsorLogo {
+        padding-top: 15px;
+        padding-left: 30%;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .container h3 {
+        font-size: 24px;
+    }
+
+    .fade-carousel .slides .slide-1, .fade-carousel .slides .slide-2, .fade-carousel .slides .slide-3, .fade-carousel .slides .slide-4 {
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero {
+        top: 15%;
+    }
+
+    .fade-carousel {
+        height: 200px;
+    }
+
+    .topFooter {
+        height: auto;
+    }
+
+    .bottomFooter {
+        margin-top: -10px;
+    }
+    .topFooter a {
+        margin-left: 40px;
+    }
+    /*** MeetUps PAGE***/
+    .iPhone_view {
+        display: inline;
+    }
+
+    .iPad_view {
+        display: none;
+    }
+
+    .normal_view {
+        display: none;
+    }
+    .MU h2 {
+        font-size: 20px;
+    }
+    /*Program*/
+    #wrap {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        margin-top: 30%;
+    }
+
+        #wrap .card {
+            margin-bottom: 35%;
+            height: 350px;
+        }
+
+            #wrap .card .thumb {
+                top: -3%;
+            }
+
+            #wrap .card h3 {
+                margin-top: 30px;
+                text-align: center;
+            }
+
+    section.page-section.prose img {
+        width: 100%;
+    }
+
+    .modal-dialog {
+        width: 370px;
+    }
+
+    .calendar_view iframe {
+        width: 300px;
+        height: 150px;
+    }
+
+    .box {
+        margin: 1% 0%;
+    }
+    /*Day Trip*/
+    .parallax-section {
+        background-size: 690px 650px;
+    }
+
+    .parallax-content {
+        padding: 0px 0 105px 0;
+    }
+
+        .parallax-content h2 {
+            font-size: 2.5em;
+            margin: 50px 0 80px 0;
+            padding-top: 40%;
+        }
+
+    .card.text-center {
+        padding-top: 10px;
+    }
+    .prose li {
+        margin-left: -17%;
+    }
+    section.page-section.prose h1, .HF h1 {
+        font-size: 2rem;
+    }
+}
+
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
