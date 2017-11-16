@@ -1,5 +1,4 @@
-# Aging-Connecticut
-College Tech Challenge Final Round
+# Aging-Connecticut-College Tech Challenge Final Round
 
 <b>Project name:</b> Aging Connecticut
 
